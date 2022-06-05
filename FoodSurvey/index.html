@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Critique Survey</title>
+    <link rel="stylsheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Food Critique</h1>
+            <p>Please tell us what you think of the many food dishes you tried. Your opinion matters. Thank you for your time.</p>
+        </header>
+        
+        <form id="survey" action="#">
+        
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter Name Here" required /></label>
+            <label id="email-label">Email <input id="email" type="email" placeholder="Enter Email Here" required /> </label>
+            <label id="number-label">Timeslot (on ticket) <input id="timeslot" type="number" placeholder="12" required/></label>
+            <select id="dropdown">
+                <option>(Select Your Food Expertise)</option>
+                <option>None, Just Here For Fun</option>
+                <option>I Cook/Prep Food for my Family Only</option>
+                <option>Food Vlogger/Blogger</option>
+                <option>I Love Cooking and I'm Good at it!</option>
+                <option>All of the Above. Pro Chef</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
