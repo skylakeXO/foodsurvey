@@ -5,28 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Critique Survey</title>
-    <link rel="stylsheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 id="title">Food Critique</h1>
-            <p>Please tell us what you think of the many food dishes you tried. Your opinion matters. Thank you for your time.</p>
-        </header>
-        
+    
+    <header>
+        <h1 id="title">Food Critique</h1>
+        <p id="header-p">Please tell us what you think of the many food dishes you tried. Your opinion matters. Thank you for your time.</p>
+    </header>        
+    <div class="container">    
         <form id="survey" action="#">
-        
-            <label id="name-label">Name <input id="name" type="text" placeholder="Enter Name Here" required /></label>
-            <label id="email-label">Email <input id="email" type="email" placeholder="Enter Email Here" required /> </label>
-            <label id="number-label">Timeslot (on ticket) <input id="timeslot" type="number" placeholder="12" required/></label>
+            <div >
+                <label id="name-label">Name <input class="basic-info" id="name" type="text" placeholder="Enter Name Here" required /></label>
+            </div>
+            <div>
+                <label id="email-label">Email <input class="basic-info" id="email" type="email" placeholder="Enter Email Here" required /> </label>
+            </div>
+            <div>
+                <label id="number-label">Timeslot (on ticket) <input class="basic-info" id="timeslot" type="number" placeholder="12" required /></label>
+            </div>
+
+            <p>Out of the competing chef teams, which one is your favorite?</p>
+            <div class="vote"><label><input type="radio" name="vote" /> Eats Alot</label></div>
+            <div class="vote"><label><input type="radio" name="vote" /> Foodies 4 Lyfe</label></div>
+            <div class="vote"><label><input type="radio" name="vote" /> Stuffed</label></div>
+            <div class="vote"><label><input type="radio" name="vote" /> Tasty Truffles</label></div>
+            <div class="vote"><label><input type="radio" name="vote" /> Late Night Lunchers</label></div>
+            <div class="vote"><label><input type="radio" name="vote" /> Big Eats</label></div>        
+
+            <p>From the following options, choose your food expertise level:</p>
             <select id="dropdown">
-                <option>(Select Your Food Expertise)</option>
-                <option>None, Just Here For Fun</option>
-                <option>I Cook/Prep Food for my Family Only</option>
-                <option>Food Vlogger/Blogger</option>
-                <option>I Love Cooking and I'm Good at it!</option>
-                <option>All of the Above. Pro Chef</option>
+                <option value="">(My Food Expertise is...)</option>
+                <option value="1">None, Just Here For Fun</option>
+                <option value="2">I Cook/Prep Food for my Family Only</option>
+                <option value="3">Food Vlogger/Blogger</option>
+                <option value="4">I Love Cooking and I'm Good at it!</option>
+                <option value="5">All of the Above. Pro Chef</option>
             </select>
+
+            <p>What type of food cuisine(s) did you enjoy eating at the event?</p>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="american"/>American</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="brazilian"/>Brazilian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="chinese"/>Chinese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="greek"/>Greek</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="indian"/>Indian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian"/>Italian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian"/>Japanese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="korean"/>Korean</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="lebanese"/>Lebanese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="mexican"/>Mexican</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="vietnamese"/>Vietnamese</label></div>
+
+            <label>Please leave any comments and suggestions: 
+                <textarea name="comment" rows="3" cols="30" placeholder="I loved eating..."></textarea>
+            </label>
+            
+
+            <button type="submit" id="submit">Submit</button>
         </form>
     </div>
 </body>
