@@ -8,30 +8,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
-    <header>
-        <h1 id="title">Food Critique</h1>
-        <p id="header-p">Please tell us what you think of the many food dishes you tried. Your opinion matters. Thank you for your time.</p>
-    </header>        
+           
     <div class="container">    
-        <form id="survey" action="#">
-            <div >
-                <label id="name-label">Name <input class="basic-info" id="name" type="text" placeholder="Enter Name Here" required /></label>
-            </div>
-            <div>
-                <label id="email-label">Email <input class="basic-info" id="email" type="email" placeholder="Enter Email Here" required /> </label>
-            </div>
-            <div>
-                <label id="number-label">Timeslot (on ticket) <input class="basic-info" id="timeslot" type="number" placeholder="12" required /></label>
-            </div>
+        <header>
+            <h1 id="title">Food Critique</h1>
+            <p id="description"><i>Please tell us what you think of the many food dishes you tried. Your opinion matters. Thank you for your time.</i></p>
+        </header> 
+        <form id="survey-form" action="#">
+            <label id="name-label">Name <input class="basic-info" id="name" type="text" placeholder="Enter Name Here" required /></label>
+            <label id="email-label">Email <input class="basic-info" id="email" type="email" placeholder="Enter Email Here" required /> </label>
+            <label id="number-label">Timeslot (on ticket) <input class="basic-info" id="number" type="number" placeholder="12" min="12" max="6" required /></label>            
+                
 
             <p>Out of the competing chef teams, which one is your favorite?</p>
-            <div class="vote"><label><input type="radio" name="vote" /> Eats Alot</label></div>
-            <div class="vote"><label><input type="radio" name="vote" /> Foodies 4 Lyfe</label></div>
-            <div class="vote"><label><input type="radio" name="vote" /> Stuffed</label></div>
-            <div class="vote"><label><input type="radio" name="vote" /> Tasty Truffles</label></div>
-            <div class="vote"><label><input type="radio" name="vote" /> Late Night Lunchers</label></div>
-            <div class="vote"><label><input type="radio" name="vote" /> Big Eats</label></div>        
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="eatsalot"/> Eats Alot</label></div>
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="foodies4lyfe"/> Foodies 4 Lyfe</label></div>
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="stuffed"/> Stuffed</label></div>
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="tastytruffles"/> Tasty Truffles</label></div>
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="latenightlunchers"/> Late Night Lunchers</label></div>
+            <div class="vote"><label><input type="radio" name="vote" class="choice" value="bigeats"/> Big Eats</label></div>        
 
             <p>From the following options, choose your food expertise level:</p>
             <select id="dropdown">
@@ -44,23 +39,21 @@
             </select>
 
             <p>What type of food cuisine(s) did you enjoy eating at the event?</p>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="american"/>American</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="brazilian"/>Brazilian</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="chinese"/>Chinese</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="greek"/>Greek</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="indian"/>Indian</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian"/>Italian</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian"/>Japanese</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="korean"/>Korean</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="lebanese"/>Lebanese</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="mexican"/>Mexican</label></div>
-            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="vietnamese"/>Vietnamese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="american" class="choice"/>American</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="brazilian" class="choice"/>Brazilian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="chinese" class="choice"/>Chinese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="greek" class="choice"/>Greek</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="indian" class="choice"/>Indian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian" class="choice"/>Italian</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="italian" class="choice"/>Japanese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="korean" class="choice"/>Korean</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="lebanese" class="choice"/>Lebanese</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="mexican" class="choice"/>Mexican</label></div>
+            <div class="cuisine"><label><input type="checkbox" name="cuisine" value="vietnamese" class="choice"/>Vietnamese</label></div>
 
-            <label>Please leave any comments and suggestions: 
-                <textarea name="comment" rows="3" cols="30" placeholder="I loved eating..."></textarea>
-            </label>
-            
-
+            <p>Please leave any comments and suggestions: </p>
+            <textarea name="comment" rows="3" cols="30" placeholder="I loved eating..."></textarea>
+        
             <button type="submit" id="submit">Submit</button>
         </form>
     </div>
