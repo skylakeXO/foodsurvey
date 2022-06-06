@@ -29,6 +29,7 @@ h1, #description {
   width: 100%;
     min-width: 200px;
     max-width: 500px;
+  color: #353535;
 }
 
 .basic-info, .vote  {
@@ -38,7 +39,7 @@ h1, #description {
 
 .choice {
   width: unset;
-  margin: 0 0.5em 0 0;
+  margin: 0 0.6em 0 0;
   vertical-align: middle;
 }
 
@@ -70,4 +71,17 @@ button {
   display: block;
   width: 100%;
   background-color: white;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  margin-top: 1rem;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  min-width: 300px;
+  color: #161a1d
 }
